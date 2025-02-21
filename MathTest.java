@@ -11,25 +11,25 @@ class MathTest {
 	Math math = new Math();
 
 	@Test
-	void testMultiplyReturnsCorrectValues() {
+	void testMultiplyReturnsCorrectValues() { //multiply test
 		int product = math.multiply(2, 5);
 		assertEquals(10, product);
 	}
 	
 	@Test
-	void testDivideReturnsCorrectValues() {
+	void testDivideReturnsCorrectValues() { //divide test
 		double quotient = math.divide(5, 2);
 		assertEquals(2, quotient);
 	}
 	
 	@Test
-	void testIsPositiveReturnsTrueIfArgIsPositive() {
+	void testIsPositiveReturnsTrueIfArgIsPositive() { //true test
 		int a = 5;
 		assertTrue(math.isPositiveNumber(a));
 	}
 	
 	@Test
-	 void testDivideThrowsExceptionWhenDividingbyZero() {
+	 void testDivideThrowsExceptionWhenDividingbyZero() { //Exception test
 		assertThrows(ArithmeticException.class, () -> math.divide(5, 0)); //using lambda () ->
 	}
 	

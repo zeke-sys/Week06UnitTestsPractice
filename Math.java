@@ -6,7 +6,7 @@ public class Math {
 		return a * b;
 	}
 	
-	public double divide(int a, int b) { //method that divides two doubles and returns a double
+	public double divide(int a, int b) { //method that divides two ints and returns a double
 		return a / b;
 	}
 	
